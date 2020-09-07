@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="864px" height="864px" viewBox="0 0 864 864" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bc5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F6D849" offset="0%"></stop>
+            <stop stop-color="#E8AB39" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="431.62875" cy="431.62875" r="431.62875"></circle>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#FAC34E" offset="0%"></stop>
+            <stop stop-color="#F18C00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV" transform="translate(-487.000000, -86.000000)">
+            <g id="bc5" transform="translate(487.000000, 86.000000)">
+                <g id="Coin">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <rect id="stripe1" fill="#FF9B00" opacity="0.689011347" mask="url(#mask-3)" x="-144.585" y="382.725" width="1152.4275" height="102.06"></rect>
+                    <rect id="stripe2" fill="#FF9B00" opacity="0.689011347" mask="url(#mask-3)" transform="translate(431.628750, 433.755000) rotate(-270.000000) translate(-431.628750, -433.755000) " x="-144.585" y="382.725" width="1152.4275" height="102.06"></rect>
+                    <rect id="stripe3" fill="#FF9B00" opacity="0.689011347" mask="url(#mask-3)" transform="translate(431.628750, 433.755000) rotate(-315.000000) translate(-431.628750, -433.755000) " x="-144.585" y="382.725" width="1152.4275" height="102.06"></rect>
+                    <rect id="stripe4" fill="#FF9B00" opacity="0.689011347" mask="url(#mask-3)" transform="translate(431.628750, 433.755000) rotate(-225.000000) translate(-431.628750, -433.755000) " x="-144.585" y="382.725" width="1152.4275" height="102.06"></rect>
+                </g>
+                <circle id="Coin-center" fill="url(#linearGradient-4)" cx="433.755" cy="433.755" r="340.2"></circle>
+                <text id="$" font-family="Montserrat-SemiBold, Montserrat" font-size="459.27" font-weight="500" fill="#FFE9B8">
+                    <tspan x="289.17" y="593.8375">$</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

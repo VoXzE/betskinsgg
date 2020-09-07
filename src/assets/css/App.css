@@ -1,0 +1,3024 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800i&display=swap');
+
+* {
+  font-family: 'Montserrat', Courier, monospace;
+  font-weight: 600;
+}
+
+body>#root>div {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.container {
+  background: #222A33;
+  flex: 4; /* 4 */
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.SideNavigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #161e27;
+  position: relative;
+}
+
+.SideNavigation .SideUserInfo {
+  margin-left: 20px;
+  margin-top: 10px; /* This is the offset from design */
+ }
+
+.SideNavigation .Level {
+  width: 28px;
+  height: 28px;
+  border-radius: 250px;
+  font-size: 15px;
+  color:#fff;
+  line-height:28px;
+  text-align:center;
+  background:#73DAFF;
+  position: absolute;
+  bottom: 15px;
+  right: -5px;
+}
+
+.SideNavigation .ProfilePicture {
+  position: relative;
+  height: 82px;
+}
+
+.SideNavigation .SideUserInfo h1 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.SideNavigation .ProfilePicture img {
+  height: 64px;
+  width: 64px;
+}
+
+.SideNavigation .SideBalance img { 
+  width: 19px;
+  height: 19px;
+}
+
+.SideNavigation .SideBalance h1 {
+  margin-left: 8px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.SideNavigation .SideBalance {
+  display: flex;
+  flex-direction: row;
+  background-color: #10171E;
+  border-radius: 12px;
+  align-items: center;
+  padding: 12px 10px;
+  justify-content: space-between;
+  
+}
+
+.SideNavigation .SideUserBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.SideNavigation .AddBalance {
+  display: flex;
+  flex-direction: row;
+  background-color: #10171E;
+  border-radius: 13px;
+  margin-left: 8px;
+  align-items: center;
+  color: #506477;
+  padding: 0px 15px;
+  /* padding: 0px 20px; */
+  font-size: 18px;
+}
+
+.SideNavigation .SideHeader {
+  /* background: purple; */
+  /* padding: 35px 20px; */
+  padding: 2.2rem 8px;
+  display: flex;
+  overflow: hidden;
+}
+
+.SideNavigation .SideNavigationFooter {
+  background: #10171E;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.SideNavigation .SideNavigationFooter a {
+  color: #506477;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.SideNavigation .SideNavigationFooter .ActiveClass {
+  color: #fff;
+}
+
+.SideNavigation .SideNavigationFooter a:hover {
+  color: #fff;
+  transition: 150ms;
+}
+
+.SideNavigation .SideNavigationFooter ul {
+  list-style-type: none;
+  padding: 5px 25px;
+}
+
+.SideNavigation .SideNavigationFooter li {
+  margin: 10px 0;
+}
+
+.SideNavigation .SideNavigationLinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.SideNavigation .SideNavigationLinks li {
+  margin-bottom: 27px;
+}
+
+
+.SideNavigation .SideNavigationLinks li h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 5.5px 0 0px 0;
+}
+
+.SideNavigation .Rocket {
+  transform: rotate(80deg);
+}
+
+.SideNavigation .SideNavigationLinks li a, .NavLink {
+  display: flex;
+  color: #506477;
+  fill: #506477;
+  flex-direction: row;
+  align-content: center;
+  transition: 150ms;
+  height: 3rem;
+  text-decoration: none;
+}
+.SideNavigation .SideNavigationLinks li a:hover {
+  color: #fff;
+  fill: #fff!important;
+}
+
+.SideNavigation .SideNavigationRewardIcon {
+  width: 32px;
+  margin-right: 15px;
+}
+
+.SideNavigation .SideNavigationReward h1 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+  color: #506477;
+  font-weight: 700;
+}
+
+.SideNavigation .SideNavigationReward span {
+  color: #FAD67B;
+  font-weight: 700;
+}
+
+.SideNavigation .SideNavigationReward {
+  background: #10171E;
+  margin: 0 15px;
+  border-radius: 12px;
+  padding: 11px 15px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.SideNavigation .SideNavigationLinks .SideNavigationIcon {
+  width: 30px!important;
+  margin-right: 20px;
+}
+
+.SideNavigation .SideNavigationActive {
+  border-right: 3.5px solid #73DAFF;
+}
+
+.SideNavigation .SideNavigationActive h1, .SideNavigation .SideNavigationActive .SideNavigationIcon {
+  color: #fff;
+  fill: #fff;
+}
+
+/* End of SideNavigation Section */
+
+/* Begining of Chat Section */
+.ChatBox {
+  flex: 1;
+  display: flex;
+  background-color: #161e27;
+  flex-direction: column;
+}
+
+.ChatBoxTop {
+  padding: 0 15px;
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  /* background: red; */
+}
+
+.ChatStatus {
+  display: flex;
+  flex: 3.7;
+  flex-direction: row;
+  align-content: center;
+}
+
+.ChatFlagSection {
+  flex: 1;
+}
+
+.ChatFlag img {
+  height: 100px;
+  width: 20px;
+}
+
+.ChatFlag {
+  top: -4px;
+}
+
+.flag-options {
+  right: -16px;
+  top: 32px;
+}
+
+.flag-select .arrow-down {
+  font-size: 23px!important;
+  color: #fff!important;
+  display: none;
+}
+.ChatStatus h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #506477;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.ChatStatus span {
+  color: #fff;
+}
+
+.ChatStatus .Circle {
+  margin-top: 3px;
+  height: 13px;
+  width: 13px;
+  background: #70FFAE;
+  border-radius: 50%;
+  border: 3px solid #316250;
+}
+
+.ChatMessageSection {
+  flex: 15;
+  display: flex;
+  padding: 0 15px;
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+  /* background: teal; */
+}
+
+.ChatInputBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  /* background: rebeccapurple; */
+}
+
+.ChatInputBox input::placeholder {
+  color: #506477;
+}
+
+.ChatInputBox input:focus {
+  outline: none;
+}
+
+.ChatInputBox input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 15px;
+  background: #10171E;
+  border: none;
+  color: #506477;
+  font-weight: 500;
+}
+
+.ChatMessage {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 18px 0;
+}
+
+.ChatContent {
+  flex: 4;
+}
+
+.ChatMessage .Avatar img {
+  width: 42px;
+  border-radius: 50%;
+  height: 42px;
+}
+
+.ChatContent .ChatName {
+  display: flex;
+}
+
+.ChatContent .ChatName .name {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  flex: 2;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+}
+
+
+.ChatContent p {
+  padding: 0;
+  margin: 0;
+  color: #506477;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.ChatMessage .ChatTime {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #506477;
+}
+
+.ChatMessage .Avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  flex: 1;
+}
+
+.ChatMessage .Avatar .Level {
+  width: 23px;
+  height: 23px;
+  border-radius: 250px;
+  font-size: 11px;
+  color: #fff;
+  line-height: 23px;
+  text-align: center;
+  background: #73DAFF;
+  position: absolute;
+  bottom: 16px;
+  right: 9px;
+}
+
+.AdminTag {
+  width: 61px;
+  font-weight: 700;
+  height: 23px;
+  border-radius: 250px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 23px;
+  text-align: center;
+  background: #FF5959;
+  margin-left: 10px;
+}
+
+.ModTag {
+  width: 61px;
+  font-weight: 700;
+  height: 23px;
+  border-radius: 250px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 23px;
+  text-align: center;
+  background: #7390FF;
+  margin-left: 10px;
+}
+
+.StreakRolls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.StreakRolls .redRoll {
+  width: 32px;
+  height: 32px;
+  border-radius: 250px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  background: #FF5959;
+}
+
+.StreakMessage {
+  background-color: #27313d;
+  padding: 10px 25px;
+  padding: 5px 25px 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.StreakMessage h1 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.StreakMessage .btn {
+  background-color: #6D7D90;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 125px;
+  align-self: center;
+  position: absolute;
+  bottom: -16px;
+}
+
+.StreakRolls .blackRoll {
+  width: 32px;
+  height: 32px;
+  border-radius: 250px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* End of Side Chat Section */
+
+
+/* Start of Random Section */
+.LogoContainer {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.LogoContainer img {
+  height: 26px;
+}
+
+.JackpotContainer {
+  flex: 10;
+  display: flex;
+  /* background: teal; */
+  padding: 0 35px;
+  flex-direction: column;
+}
+
+.PreviousWinnerContainer {
+  flex: 1;
+  padding: 15px 50px;
+}
+
+
+
+.PreviousWinnerBox {
+  display: flex;
+  background: #1C252E;
+  border-radius: 10px;
+  padding: 0 25px;
+  height: 100%;
+  align-items: center;
+  max-width: 100%; 
+  justify-content: space-between;
+}
+
+.WinnerAvatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.PreviousWinnerBox h1 {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.PreviousWinnerBox h2 {
+  color: #4D6073;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.PreviousWinnerBox h2 span {
+  color: #fff;
+}
+
+.PreviousWinnerBox img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.WinnerBalance img {
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+}
+
+.WinnerBalance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #222A33;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.JackpotInfo {
+  /* background: #FF5959; */
+  flex: 2; /* 4 */
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: row;
+}
+
+.JackpotInfo .right {
+  flex: 1;
+}
+
+.JackpotChart {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+}
+.JackpotInfo .minicontainer .top .icon {
+  width: 32px;
+}
+
+.JackpotInfo .minicontainer .top .total img { 
+  margin-right: 10px;
+}
+
+.JackpotInfo .minicontainer .top .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 15px;
+  color: #fff;
+  background: #1C252E;
+}
+
+.PlayerInPot .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 15px;
+  color: #fff;
+  background: #222A33;
+}
+
+.JackpotInfo .minicontainer .top .totalPlayer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 15px;
+  color: #fff;
+  background: #1C252E;
+}
+
+.JackpotInfo .minicontainer .top .totalPlayer .icon {
+  fill: #fff;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.JackpotInfo .minicontainer .top .chance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 15px;
+  color: #fff;
+  background: #1C252E;
+}
+
+.JackpotInfo .minicontainer .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-weight: 500;
+}
+.JackpotInfo .minicontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.JackpotInfo .minicontainer .bottom {
+  flex: 10;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.JackpotInfo .minicontainer .top .color {
+  width: 16px;
+  height: 16px;
+  border-radius: 250px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background: #73DAFF;
+  margin-right: 10px;
+}
+
+.JackpotInfo .minicontainer .PlayersInPotSection {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  flex: 9;
+  position: relative;
+  margin-top: 15px;
+}
+
+.JackpotInfo .minicontainer .PlayersInPot {
+  display: flex;
+  flex-direction: column-reverse;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.JackpotInfo .minicontainer .t {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  height:40px;
+  width:100%;
+  background: linear-gradient(rgba(0,0,0,0), #222A33);
+}
+
+.JackpotInfo .minicontainer .PlayerInPot .total img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.JackpotInfo .minicontainer .PlayerInPot {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #1C252E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.JackpotInfo .minicontainer .PlayerInPot h1 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.JackpotInfo .minicontainer .PlayerInPot h2 {
+  padding: 0;
+  margin: 0;
+  color: #4F6376;
+  font-size: 20px;
+}
+
+.JackpotInfo .minicontainer .PlayerInPot img {
+  width: 50px;
+  height: 50px;
+}
+
+.PlayerInPot .color {
+  width: 3px;
+  margin-left: 15px;
+  height: 40px;
+  border-radius: 50px;
+  background:#73DAFF;
+}
+
+.jackpotHash {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  color: #506477;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.JackpotInfo .amounts .top {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.JackpotInfo .amounts .button {
+  background: #73DAFF;
+  border: none;
+  box-shadow: 0px 0px 5px #73DAFF;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-weight: 600;
+  flex: 1;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.JackpotInfo .amounts .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 15px!important;
+  flex: 0.7;
+  color: #fff;
+  background: #1C252E;
+  height: 45px!important;
+}
+
+.JackpotInfo .amounts .total input {
+  background: #1C252E;
+  border: none;
+  font-size: 18px;
+  color: #506477;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.JackpotInfo .amounts .total input:focus, * button:focus {
+  outline: none;
+}
+
+.JackpotInfo .amounts .total input::placeholder {
+  color: #506477;
+}
+
+.JackpotInfo .amounts .total .clearBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.JackpotInfo .amounts .PresetAmounts {
+  flex: 1;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 2px solid #253C53;
+}
+
+.JackpotInfo .amounts .presetBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.JackpotInfo .amounts .MAX {
+  color: #FF5959;
+}
+
+.BetPlaced {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.BetPlaced h1 {
+  color: #506477;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.BetPlaced span {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.BetPlaced .time {
+  position: absolute;
+  right: 0;
+  color: #506477;
+}
+
+.BetsPlacedAmount {
+  overflow: scroll;
+  height: 325px;
+  margin-top: 15px;
+}
+
+.JackpotChart .JackpotChanceContainer {
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  background: #2B343F;
+  width: 100%;
+  height: 35%;
+  padding: 10px;
+  position: relative;
+}
+
+.JackpotChanceContainer .PlayerInPot {
+  height: 100%;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.JackpotChanceContainer .blue {
+  width:  10%;
+  background:#73DAFF;
+  box-shadow: 0px 0px 3px #73DAFF;
+}
+
+.JackpotChanceContainer .red {
+  width: 40%;
+  background: #FF5959;
+  box-shadow: 0px 0px 3px #FF5959;
+}
+
+.JackpotChanceContainer .yellow {
+  width: 40%;
+  background: #FFDA75;
+  box-shadow: 0px 0px 3px #FFDA75;
+}
+
+.JackpotChanceContainer .purple {
+  width: 10%;
+  background: #F459FF;
+  box-shadow: 0px 0px 3px #F459FF;
+}
+
+.JackpotTimer {
+  display: flex;
+  width: 100px;
+  height: 20px;
+  padding: 12px 12px;
+  color: #fff;
+  position: absolute;
+  font-weight: 600;
+  border-radius: 6px;
+  align-items: center;
+  background: #2B3035;
+  justify-content: center;
+  left: 45%;
+  top: 23px;
+}
+
+.example-appear {
+  opacity: 0;
+
+}
+
+.example-appear.example-appear-active {
+  opacity: 2;
+  transition: opacity 0.5s ease-in;
+}
+
+
+.JackpotWinnerModal {
+  background: red
+}
+
+.HistoryContainer {
+  flex: 10;
+  padding: 50px;
+}
+
+.tab-list {
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 12px 30px;
+  color: #4F6376;
+  border-radius: 12px;
+  background-color: #161E27;
+  margin: 0 15px;
+}
+
+.tab-list-active {
+  background-color: #73DAFF;
+  border-width: 1px 1px 0 1px;
+  color: #fff;
+}
+
+.RouletteGames {
+  max-height: calc(100vh / 1.3);
+  overflow: scroll;
+  border-radius: 50px;
+}
+
+.RouletteGame {
+  background-color: #161E27;
+  padding: 25px;
+  border-radius: 15px;
+  color: #4F6376;
+  margin: 20px;
+}
+
+.RouletteGame span {
+  color: #fff;
+}
+
+.RouletteGame .top {
+  display: flex;
+  width: 100%;
+}
+
+.RouletteGame .bottom {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.RouletteGame .top .GameID, .RouletteGame .bottom .Secret {
+  margin-right: 75px;
+}
+
+.ProfileContainer {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfileStats {
+  flex: 1;
+  display: flex;
+  /* background: red; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ProfileStats h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 26px;
+}
+
+.ProfileStats p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #4B5E71;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.ProfileSettings {
+  flex: 2;
+  display: flex;
+  padding: 0 10%;
+  justify-content: left;
+}
+
+.ProfileStats .profileName .picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ProfileStats .profileName .picture img {
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.ProfileStats .profileName h1 {
+  margin-top: 40px;
+}
+
+.ProfileStats .profileName p {
+  font-size: 16px;
+}
+
+.ProfileStats .totalProfit h1 {
+  color: #73DAFF;
+}
+
+
+circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.levelCircle {
+  position: absolute;
+  top: -25px;
+}
+
+.ProfileSettings .inputContainer {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.ProfileSettings .inputLabel {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.ProfileSettings .inputLabel span {
+  color: #506477;
+}
+
+.ProfileSettings .Input input {
+  width: 60%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  color: #506477;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ProfileSettings .Input input:focus {
+  outline: none;
+}
+
+input[type="checkbox"]:focus{
+    outline:0;
+}
+
+.ProfileSettings .Input input::placeholder {
+  color: #506477;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ProfileSettings form {
+  width: 100%;
+}
+
+.ProfileSettings .Input {
+  background: #161E27;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProfileSettings .Input button {
+  background-color: #73DAFF;
+  border: none;
+  padding: 5px 40px;
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px #73DAFF;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.rodal-dialog {
+  background: transparent!important;
+  box-shadow: none!important;
+}
+
+.inputContainer a {
+  color: #506477;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.ProfileSettings .ToggleSwitches {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProfileSettings .ToggleSwitches h1 { 
+  font-size: 16px;
+  color: #fff;
+}
+
+.ProfileSettings .ToggleSwitches span {
+  color: #506477;
+  font-size: 16px;
+}
+
+.ProfileSettings .ToggleSwitches .ToggleSound {
+  margin-right: 50px;
+}
+
+.FairContainer {
+  /* margin: 100px 50px 0px 50px; */
+  padding: 100px 50px 0px 50px;
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.FairContainer p {
+  color: #4F6376;
+  font-weight: 500;
+  line-height: 25px;
+  word-break: break-all;
+  max-width: 100%;
+}
+
+.FairContainer .FairGameModes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.FairContainer .FairRow {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+}
+
+.FairContainer .FairGame {
+  background: #161E27;
+  border-radius: 8px;;
+  flex: 1;
+  display: flex;
+  margin: 10px;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.FairGame .Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0.5;
+  fill: #fff;
+}
+
+.FairGame .Header h1 {
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.FairGame .Header .icon {
+  width: 28px;
+  margin-right: 10px;
+  
+
+}
+
+.FairGame .Main img {
+  height: 200px;
+}
+
+.FairGame .Main {
+  display: flex;
+  flex: 10;
+  padding-top: 10px;
+}
+
+.FairGame .rocket {
+  transform: rotate(80deg);
+}
+
+.FooterContainer {
+  margin-top: 25px;
+}
+
+.FooterContainer .FooterStats {
+  flex: 1;
+  display: flex;
+  background-color: #161E27;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+
+.FooterContainer .FooterStats p {
+  margin: 0;
+  padding: 0;
+  color: #354452;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+}
+
+.FooterContainer .FooterStats h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #506477;
+  text-align: center;
+}
+
+.FooterContainer .FooterContent {
+  flex: 1;
+  background-color: #10171E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.FooterContainer .MenuLinks {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0;
+}
+
+.FooterContainer .MenuLinks h1 {
+  color: #506477;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.FooterContainer .MenuLinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.FooterContainer .MenuLinks li a {
+  color: #354452;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.FooterContainer .MenuLinks li {
+  margin: 5px 0;
+}
+
+.FooterContainer .address h1 {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+.FooterContainer .address p {
+  padding: 0;
+  margin: 0;
+  color: #506477;
+  font-weight: 600;
+  margin-top: 10px;
+  opacity: 0.59;
+}
+
+.FooterSponsors {
+  flex: 1;
+  display: flex;
+  background: #161E27;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.FooterSponsors .mastercard {
+  width: 175px;
+}
+
+.FooterSponsors .skrill {
+  fill: #fff!important;
+  width: 61px;
+}
+
+.FooterSponsors .paysafe {
+  width: 160px;
+}
+
+.FooterSponsors .bitcoin {
+  width: 100px;
+}
+
+.FooterSponsors .paypal {
+  width: 100px;
+}
+
+.FooterSponsors h1 {
+  color: #354452;
+  font-weight: 800;
+}
+
+.FooterCopyRight {
+  flex: 1;
+  background: #10171E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.FooterCopyRight p {
+  padding: 0;
+  margin: 0;
+  color: #354452;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.FooterCopyRight .triangle {
+  fill: #506477;
+  width: 16px;
+  transform: rotate(180deg);
+}
+
+.FooterCopyRight .UpArrow {
+  background: #212933;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.CrashContainer {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.CrashContainer .CrashGame {
+  content: "";
+  flex: 1;
+  display: flex;
+}
+
+.CrashContainer .CrashInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 125px;
+
+}
+
+.CrashGame #background {
+  background: #1C252E;
+  flex: 1;
+  margin: 25px 125px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.CrashGame #planets img:nth-child(1) {
+  position: absolute;
+  right: 80px;
+  top: 45px;
+  transform: scale(0.3)
+}
+
+.CrashGame #planets img:nth-child(2) {
+  position: absolute;
+  transform: scale(0.6);
+  left: 26px;
+  bottom: 34px;
+}
+
+.CrashGame #planets img:nth-child(3) {
+  position: absolute;
+  right: 487px;
+  top: 45px;
+  transform: scale(0.4)
+}
+
+.CrashGame #planets img:nth-child(4) {
+  position: absolute;
+  right: 73px;
+  bottom: 45px;
+  transform: scale(0.76)
+}
+
+.CrashGame #stars {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  top: 50px;
+}
+
+.CrashGame #rocket {
+  position: absolute;
+  bottom: 55px;
+  height: 110px;
+  z-index: 2;
+}
+
+.CrashGame #beam {
+  position: absolute;
+  bottom: 0;
+  width: 13px;
+  height: 75px;
+}
+
+.CrashGame #crashNumber {
+  color: #fff;
+  font-weight: 800;
+  margin-top: 125px;
+  z-index: 2;
+  font-size: 38px;
+}
+
+.CrashGame .balance img {
+  margin-right: 10px;
+}
+
+.CrashGame .balances {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  position: absolute;
+  bottom: 25px;
+  z-index: 3;
+}
+
+.CrashGame .balance {
+  background: rgba(16, 23, 30, 0.43);
+  padding: 7px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 15px;  
+}
+
+.CrashInfo .crash .PresetAmounts {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 2px solid #253C53;
+}
+
+.CrashInfo .crash .presetBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.CrashInfo .crash .MAX {
+  color: #FF5959;
+}
+
+.CrashInfo .crash .button {
+  background: #73DAFF;
+  border: none;
+  box-shadow: 0px 0px 5px #73DAFF;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-weight: 600;
+  flex: 1;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.CrashInfo .crash .total input {
+  background: #1C252E;
+  border: none;
+  font-size: 18px;
+  color: #506477;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.CrashInfo .crash .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 15px !important;
+  flex: 0.7;
+  color: #fff;
+  background: #1C252E;
+  height: 45px !important;
+}
+
+.CrashInfo .crash .bets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 15px !important;
+  flex: 0.4;
+  margin-left: 15px;
+  color: #fff;
+  background: #1C252E;
+  height: 45px !important;
+}
+
+.CrashInfo .crash .total span {
+  color: #506477;
+  margin-left: 10px;
+}
+
+.CrashInfo .crash .total input:focus, * button:focus {
+  outline: none;
+}
+
+.CrashInfo .crash .total input::placeholder {
+  color: #506477;
+}
+
+.CrashInfo .crash .total img {
+  margin-right: 10px;
+}
+
+.CrashInfo .crash .total .clearBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.BetPlaced .crash {
+  position: absolute;
+  right: 0;
+  color: #fff;
+}
+
+.CrashInfo .MiniCon1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  margin-right: 75px;
+}
+
+.CrashInfo .MiniCon2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.CrashInfo .PrevCrash {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 2px solid #253C53;
+  /* width: 600px; */
+  overflow: scroll;
+}
+
+.CrashInfo .PrevCrash a {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.CrashInfo .MiniCon1 .icon {
+  width: 17px;
+  margin-right: 10px;
+  fill: #fff;
+}
+
+.PrevCrash .red {
+  color: #FF5959!important;
+}
+
+.PrevCrash .yellow {
+  color: #E1C171!important;
+}
+
+.PrevCrash .green {
+  color: #70FFAD !important;
+}
+
+.CrashInfo .BetPlaced img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.CrashInfo .MiniCon1 .BetPlaced .crash img {
+  width: 16px;
+  height: 16px;
+  margin-right: 0;
+}
+
+.CrashInfo .MiniCon1 .BetPlaced .crash span {
+  color: #506477;
+}
+
+.FaqContainer, .TosContainer {
+  flex: 10;
+  margin: 10% 10%;
+}
+
+.FaqContainer .FaqItem, .TosContainer .TosItem {
+  margin-bottom: 75px;
+}
+
+.FaqContainer .FaqItem h1, .TosContainer .TosItem h1 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.FaqContainer .FaqItem p, .TosContainer .TosItem p {
+  padding: 0;
+  margin: 0;
+  color: #4F6376;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 23px;
+}
+
+.ShopContainer {
+  flex: 10;
+  display: flex;
+  position: relative;
+}
+
+.ShopFilters {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #50647791;
+  padding-bottom: 35px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.ShopContent {
+  padding-top: 10%;
+  padding-left: 6%;
+  padding-right: 30%;
+}
+
+.ShopFilters .button {
+  background: #161E27;
+  border: none;
+  color: #4F6376;
+  padding: 13px 35px;
+  border-radius: 12px;
+  margin-right: 15px;
+  
+}
+.ShopContent {
+  flex: 4;
+}
+
+.ShopCart {
+  background: #10171E;
+  flex: 1 1;
+  justify-content: center;
+  display: flex;
+  height: 111%;
+  right: 0;
+  top: -11%;
+  position: absolute;
+  flex-direction: column;
+}
+
+.ShopCart .Header {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  /* background: teal; */
+}
+
+.ShopCart .Items {
+  flex: 6;
+  /* background: salmon; */
+  margin: 0 15px;
+  overflow: scroll;
+  padding-top: 10px;
+}
+
+.ShopCart .Items .Item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.ShopCart .Items .Item .Seperator {
+  content: "";
+  background: #506477;
+  height: 1px;
+  width: 85%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.ShopCart .Items .Item .Remove {
+  color: #506477;
+  top: -10px;
+  font-size: 18px;
+  font-weight: 800;
+  right: 0;
+  position: absolute;
+}
+
+.ShopCart .Items .Item .ItemInfo {
+  display: flex;
+  flex: 1;
+  
+}
+
+.ShopCart .Items .Item .ItemInfo .Price {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.ShopCart .Items .Item .ItemInfo .Price img {
+  width: 16px;
+  margin-right: 5px;
+  height: 16px;
+}
+
+.ItemName {
+  width: 150px;
+}
+
+.ShopCart .Items .Item h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ShopCart .Items .Item p {
+  padding: 0;
+  margin: 0;
+  color: #4B5E70;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.ShopCart .Items .Item .ItemInfo img {
+  width: 75px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.ShopCart .Buttons {
+  flex: 1.5;
+  padding: 10px;
+}
+
+.ShopCart .Buttons h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.ShopCart .total img {
+  margin-right: 10px;
+}
+.ShopCart .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  height: 40px;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  background: #1C252E;
+}
+
+.ShopCart button {
+  background: #73DAFF;
+  border: none;
+  border-radius: 13px;
+  padding: 13px 15px;
+  font-weight: 600;
+  flex: 1;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.ShopFilters .active {
+  background: #73DAFF;
+  box-shadow: 0px 0px 5px #73DAFF;
+  border: none;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.ShopFilters .button:hover {
+  background: #73DAFF;
+  box-shadow: 0px 0px 5px #73DAFF;
+  border: none;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 12px;
+  margin-right: 15px;
+  transition: 0.2s ease;
+}
+
+
+.ShopItems {
+  flex: 1;
+  flex-flow: row wrap;
+  display: flex;
+  overflow: scroll;
+  height: 630px;
+}
+
+.ShopItem {
+  background: #161E27;
+  display: flex; /* so child elements can use flexbox stuff too! */
+  padding: 25px;
+  /* flex: 1; */
+  width: 15%;
+  border-radius: 10px;
+  margin: 25px 15px;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  
+}
+.ShopItem h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+
+}
+
+.ShopItem p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #4B5E70;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.ShopItem .Price img {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.ShopItem .Price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 10px;
+  color: #fff;
+  background: #1C252E;
+  margin-top: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ShopItem img {
+  width: 112px;
+  text-align: center;
+  margin: auto;
+}
+
+.ShopItem button {
+  background: #73DAFF;
+  box-shadow: 0px 0px 5px #73DAFF;
+  border: none;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  transition: 1s ease;
+}
+
+.ShopItem button:hover {
+  transform: scale(1.05)
+}
+
+.RouletteContainer {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.RouletteContainer .Top {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.RouletteContainer .Bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.rollRed {
+  background: #EA405A;
+}
+.rollGreen {
+  background: #76FF73;
+}
+.rollBlack {
+  background: #333E4B;
+}
+
+.RouletteContainer .Bottom .betoptions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.RouletteContainer .Bottom .allbets {
+  flex: 4;
+  display: flex;
+}
+
+.RouletteContainer .Bottom .allbets .blackbets {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.RouletteContainer .Bottom .allbets .redbets {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.RouletteContainer .Bottom .allbets .greenbets {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blackHeader {
+  background: #333E4B;
+}
+
+.greenHeader {
+  background: #76FF73;
+}
+
+.redHeader {
+  background: #EA405A;
+}
+.RouletteContainer .Bottom .allbets .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  /* justify-content: space-between; */
+  border-radius: 50px;
+  padding: 0 10px;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+}
+
+.RouletteContainer .Bottom .allbets .greenCircle {
+  background: #3E8B3C;
+  background: linear-gradient(180deg, #3E8B3C 0%, #59D756 100%);
+  padding: 12px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .redCircle {
+  background: #CB3048;
+  background: linear-gradient(180deg, #CB3048 0%, #AE2A3E 100%);
+  padding: 12px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .blackCircle {
+  background: rgb(22, 30, 39);
+  background: linear-gradient(180deg, rgba(22, 30, 39, 1) 0%, rgba(51, 62, 75, 1) 100%);
+  padding: 12px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .name {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.RouletteContainer .Bottom .allbets .betamount img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+
+.RouletteContainer .Bottom .allbets .betamount {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  color: #fff;
+}
+
+.RouletteContainer .Bottom .allbets .king {
+  background: #161E27;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
+  padding: 0 10px;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+  margin-top: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .king #player {
+  max-width: 45px;
+  max-height: 45px;
+  border-radius: 50%;
+}
+
+.RouletteContainer .Bottom .allbets .king .name h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: #506477;
+}
+
+.RouletteContainer .Bottom .allbets .king .name span {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.RouletteContainer .Bottom .allbets .king #king {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  height: 24px;
+}
+
+.RouletteContainer .Bottom .allbets .players {
+  width: 300px;
+  max-height: 245px;
+  overflow: scroll;
+}
+
+.RouletteContainer .Bottom .allbets .players .player {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  color: #506477;
+}
+
+.RouletteContainer .Bottom .allbets .players .amount {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .players .player #player {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.RouletteContainer .Bottom .allbets .players .amount #coin {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.Spinner {
+  background-color: #161E27;
+  /* border-radius: 50%; */
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 700px;
+  height: 700px;
+  position: relative;
+}
+
+.Spinner #wheel {
+  position: absolute;
+  width: 700px;
+  top: 13px;
+  left: -5px;
+}
+
+.SpinnerWrapper {
+  position: absolute;
+  top: -300px;
+}
+
+.Spinner .Info .Logo img {
+  margin-top: 150px;
+  width: 150px;
+  position: absolute;
+}
+
+
+.Spinner .timerCircle {
+  position: absolute;
+  /* top: -25px; */
+}
+
+.Spinner .Info {
+  position: absolute; 
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MatchBettingContainer {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.MatchBettingContainer .MiniNav {
+  flex: 1;
+  padding-left: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.MatchBettingContainer .MatchesContainer {
+  flex: 5;
+  margin: 0 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.MatchesContainer .Matches {
+  /* padding: 9px 0; */
+  /* background: purple; */
+  overflow: scroll;
+  max-height: 550px;
+  width: 100%;
+}
+
+.MatchBettingContainer .MatchFooter {
+  flex: 1.49;
+  background: #10171E;
+  display: flex;
+}
+
+.MatchFooter .BetSlips {
+  flex: 3;
+  background: #10171E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  overflow: scroll;
+}
+
+.MatchFooter .BetOptions {
+  flex: 1;
+  background: #161E27;
+  display: flex;
+}
+
+.BetSlip {
+  background-color: #222A33;
+  width: 220px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.BetSlip h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #506477;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 120px;
+  display: block;
+  overflow: hidden
+}
+
+.BetSlip h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.BetSlip img {
+  max-height: 64px;
+  margin-right: 15px;
+}
+
+.BetSlip .Color {
+  content: "";
+  width: 3.1px;
+  margin-right: 15px;
+  height: 50px;
+  border-radius: 50px;
+  background: #73DAFF;
+}
+
+.BetOptions .Info {
+  flex: 1;
+  margin: 15px;
+}
+
+.BetOptions .button {
+  background: #73DAFF;
+  color: #fff;
+  border: none;
+}
+
+.BetOptions .total img {
+  margin-right: 10px;
+}
+
+.BetOptions .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  padding: 5px 15px;
+  color: #fff;
+  background: #1C252E;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.BetOptions .total input {
+  background: #1C252E;
+  border: none;
+  font-size: 18px;
+  color: #506477;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.BetOptions .total input::placeholder {
+  color: #506477;
+}
+
+.BetOptions .total .clearBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 500;
+  font-size: 16px;
+  position: absolute;
+  right: 15px;
+}
+
+.BetOptions .total input:focus, * button:focus {
+  outline: none;
+}
+
+.BetOptions .potential {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.BetOptions span {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.BetOptions .potential {
+  margin-top: 10px;
+}
+
+.BetOptions .potential img {
+  margin: 0 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.BetOptions p {
+  padding: 0;
+  margin: 0;
+  color: #506477;
+  font-size: 16px;
+  /* margin-top: 15px; */
+}
+
+.MatchItem {
+  display: flex;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 10px !important;
+  position: relative;
+  padding: 7px;
+  margin-top: 2rem;
+  height: 75px;
+  flex-basis: auto;
+  /* width: 900px; */
+}
+
+.MatchItem .left {
+  flex: 1;
+  display: flex;
+}
+
+.MatchItem .right {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.MatchItem .middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.MatchItem {
+  padding: 0;
+  display: flex;
+  background: #161E27;
+}
+
+.MatchItem .left .league {
+  flex: 0 0;
+  width: 100px;
+  background: #121921;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MatchItem .right .timeleft {
+  flex: 0 0;
+  width: 100px;
+  background: #121921;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MatchItem .right .timeleft h1 { 
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 25px;
+  font-weight: 600;
+}
+
+.MatchItem .right .timeleft p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #506477;
+}
+
+.MatchItem .right .league {
+  flex: 0 0;
+  width: 100px;
+  background: #121921;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.MatchItem .left .betamount {
+  background: #222A33;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 15px 0 15px 10px;
+}
+
+.MatchItem .right .betamount {
+  background: #222A33;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 15px 10px 15px 0;
+}
+
+
+.MatchItem .left .teaminfo {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  position: relative;
+}
+
+.MatchItem .right .teaminfo {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  position: relative;
+}
+
+.MatchItem .teaminfo h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.MatchItem .teaminfo .teamname h1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 105px;
+  display: block;
+  overflow: hidden
+}
+
+.MatchItem .left .teamodds {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.MatchItem .right .teamodds {
+  display: flex;
+  flex-direction: row;
+}
+
+.MatchItem .left .teamlogo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.MatchItem .right .teamlogo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.MatchItem .left .teamodds h1 {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.MatchItem .right .teamodds h1 {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.MatchItem .teamodds p {
+  color: #506477;
+  font-size: 16px;
+  /* margin-left: 15px; */
+}
+
+.MatchItem .betamount img {
+  margin-right: 10px;
+}
+
+.MatchItem .league h1 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  margin: 25px;
+}
+
+/* .MatchItem .left .Color {
+  content: "";
+  width: 3px;
+  height: 50px;
+  border-radius: 50px;
+  background: #73DAFF;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.MatchItem .right .Color {
+  content: "";
+  width: 3px;
+  height: 50px;
+  border-radius: 50px;
+  background: #73DAFF;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 15px;
+} */
+
+
+.MatchItem .Color {
+  content: "";
+  width: 3px;
+  height: 50px;
+  border-radius: 50px;
+  background: #73DAFF;
+  display: flex;
+  margin: 0 10px;
+}
+
+
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-background {
+  stroke:red;
+  fill: #161E27;
+}
+
+.circle-progress {
+  stroke: #73DAFF;
+  /* stroke-linecap: round;
+  stroke-linejoin: round; */
+}
+
+.betoddsCircle {
+  border: 10px solid #161E27;
+  border-radius: 50%;
+}
+
+.MatchItem .matchinfo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MatchItem .matchinfo h1 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 13px
+}
+
+.MatchItem .matchinfo p {
+  padding: 0;
+  margin: 0;
+  color: #506477;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.MiniNav .buttons {
+  flex: 1;
+}
+.MiniNav .games {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.MiniNav .buttons .button {
+  background: #161E27;
+  border: none;
+  color: #4F6376;
+  padding: 13px 35px;
+  border-radius: 12px;
+  margin-right: 15px;
+  transition: 0.3s
+}
+
+.MiniNav .buttons .button:hover {
+  background: #73DAFF;
+  color: #fff;
+}
+
+.MiniNav .blue {
+  background: #73DAFF!important;
+  color: #fff!important;
+}
+
+.MatchItem .redButton {
+  color: #fff;
+  background: #FF5959;
+  border: none;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  font-size: 16px;
+  transition: 0.5s;
+
+}
+
+.MatchItem .blueButton {
+  color: #fff;
+  background: #73DAFF;
+  border: none;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  font-size: 16px;
+  transition: 0.5s;
+
+}
+
+.MatchItem .blueButton:hover, .MatchItem .redButton:hover {
+  transform: scale(1.05)
+}
+
+.RouletteContainer .betoptions .total img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.RouletteContainer .betoptions .total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 30px;
+  font-size: 10px;
+  padding: 5px 15px;
+  color: #fff;
+  background: #1C252E;
+  position: relative;
+  width: 175px;
+}
+
+.RouletteContainer .betoptions .total input {
+  background: #1C252E;
+  border: none;
+  font-size: 18px;
+  color: #506477;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.RouletteContainer .betoptions .total input::placeholder {
+  color: #506477;
+  font-size: 15px;
+}
+
+.RouletteContainer .betoptions .total .clearBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 500;
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+}
+
+.RouletteContainer .betoptions .total input:focus, * button:focus {
+  outline: none;
+}
+
+.RouletteContainer .betoptions .PresetAmounts {
+  /* flex: 1; */
+}
+
+.RouletteContainer .betoptions .presetBtn {
+  background: none;
+  border: none;
+  color: #506477;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.RouletteContainer .betoptions .MAX {
+  color: #FF5959;
+}
+
+.RouletteContainer .betoptions .recentrolls {
+  background: #161E27;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+}
+
+.RouletteContainer .betoptions .recentrolls .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.SignUpModal {
+  background: red;
+  display: flex;
+}
+
+
+.SignUpModal .left {
+  background: #222A33;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 10px;
+}
+
+.SignUpModal .left h1 {
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.SignUpModal .right {
+  background: #1A232D;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignUpModal .right h1 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+
+
+.SignUpModal .right img {
+  width: 250px;
+}
+
+
+.signinmethods {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 0.5px solid #506477;
+}
+
+.signinmethods .method {
+  background: #1A232D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 120px;
+  height: 50px;
+}
+.SignUpModal .input img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.SignUpModal .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  height: 30px;
+  font-size: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  background: #1C252E;
+  position: relative;
+  width: 252px;
+  margin-top: 15px;
+}
+
+.inputsection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputsection p {
+  padding: 0;
+  margin: 0;
+  color: #506477;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.SignUpModal .buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.SignUpModal .buttons button {
+  background: #73DAFF;
+  border: none;
+  flex: 1;
+  color: #fff;
+  height: 45px;
+  margin: 0 45px;
+  border-radius: 8px;
+}
+
+.SignUpModal .input input {
+  background: #1C252E;
+  border: none;
+  font-size: 18px;
+  color: #506477;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 200px;
+  font-size: 15px;
+}
+
+.SignUpModal .input input::placeholder {
+  color: #506477;
+  font-size: 15px;
+}
+
+.SignUpModal .input input:focus, * button:focus {
+  outline: none;
+}
