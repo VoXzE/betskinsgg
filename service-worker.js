@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/betskinsgg/precache-manifest.28e6ff8f351152e51fdcc88909a5c2c0.js"
+  "/betskinsgg/precache-manifest.5d7419f5facc91c815b8976372595bb8.js"
 );
 
 self.addEventListener('message', (event) => {

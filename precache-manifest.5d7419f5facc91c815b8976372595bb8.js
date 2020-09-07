@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b491bc419922b8fcdc9122b4f0b269a",
+    "revision": "61e653eae314e977915e447f9a379433",
     "url": "/betskinsgg/index.html"
   },
   {
-    "revision": "a5b34e09c90fc125d878",
+    "revision": "152dc5e9a0ff2f256025",
     "url": "/betskinsgg/static/css/2.e6e27084.chunk.css"
   },
   {
-    "revision": "aef9e70b55c33f2163ef",
+    "revision": "b6843a539d999427e2cd",
     "url": "/betskinsgg/static/css/main.813c11ff.chunk.css"
   },
   {
-    "revision": "a5b34e09c90fc125d878",
-    "url": "/betskinsgg/static/js/2.94dfdd7f.chunk.js"
+    "revision": "152dc5e9a0ff2f256025",
+    "url": "/betskinsgg/static/js/2.682c03ec.chunk.js"
   },
   {
-    "revision": "aef9e70b55c33f2163ef",
-    "url": "/betskinsgg/static/js/main.bc2453ea.chunk.js"
+    "revision": "b6843a539d999427e2cd",
+    "url": "/betskinsgg/static/js/main.71dc829b.chunk.js"
   },
   {
     "revision": "a27e8acd13da8cf8cb87",
