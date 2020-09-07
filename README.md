@@ -4,4 +4,4 @@ This was a client project towarded to a casino type platform, I was freelanced t
 Live version located [Here](https://voxze.github.io/betskinsgg/#/)
 
 ## Preview 
-![Preview of site](https://i.imgur.com/UXO1Dns.png)
+![Preview of site](https://i.imgur.com/q3daRCl.png)
